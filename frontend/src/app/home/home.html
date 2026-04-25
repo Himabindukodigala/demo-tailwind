@@ -1,0 +1,52 @@
+<!-- Background Section -->
+<div class="min-h-screen bg-cover bg-center"
+     style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');">
+
+  <!-- Overlay -->
+  <div class="bg-black bg-opacity-60 min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center px-8 py-4 text-white">
+      <h1 class="text-2xl font-bold">DhanushProject</h1>
+      <div class="space-x-6">
+        <a class="hover:text-blue-400 cursor-pointer">Home</a>
+        <a class="hover:text-blue-400 cursor-pointer">Features</a>
+        <a class="hover:text-blue-400 cursor-pointer">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="flex flex-col items-center justify-center text-center text-white px-6 py-20">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">
+        Welcome to DhanushProject
+      </h2>
+
+      <p class="max-w-2xl text-lg text-gray-300">
+        Build, manage, and scale your applications with a clean and modern interface.
+      </p>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="max-w-6xl mx-auto px-6 pb-16">
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div *ngFor="let card of cards"
+             class="bg-white rounded-xl p-6 text-center shadow-lg hover:scale-105 transition">
+
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">
+            {{ card.title }}
+          </h3>
+
+          <p class="text-gray-600">
+            {{ card.desc }}
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
